@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
     return (
-        <nav className="text-black bg-yellow-200 p-4">
+        <nav className="text-black bg-blue-200 p-4">
             <div className='md:hidden' onClick={() => setOpen(!open)}>
                 {
                     open=== true? <RxCross1 className="text-2xl"></RxCross1> 
@@ -29,7 +29,7 @@ const NavBar = () => {
                 }
             </div>
             <ul className={`md:flex absolute duration-3000
-                ${open? 'top-14': '-top-60'} bg-yellow-200 px-6 shadow-lg md:shadow-none md:static`}>
+                ${open? 'top-14': '-top-60'} bg-blue-200 px-6 shadow-lg md:shadow-none md:static`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
